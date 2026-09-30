@@ -8,6 +8,24 @@ const socialLinks = [
   { label: "WhatsApp", href: "https://wa.me/6281333962166" },
 ];
 
+function SocialIcon({ name }) {
+  const common = { width: 21, height: 21, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true };
+  if (name === "LinkedIn") return <svg {...common}><rect x="3" y="8" width="4" height="13" /><path d="M5 4.5h.01M11 21V8h4v2c.7-1.4 2-2.3 3.8-2.3 2.4 0 3.2 1.7 3.2 4.4V21h-4v-8c0-1.3-.5-2-1.6-2-1.2 0-1.8.8-1.8 2V21" /></svg>;
+  if (name === "Dribbble") return <svg {...common}><circle cx="12" cy="12" r="9" /><path d="M8 4.1c3.6 4.1 5.7 8.5 6.8 16.1M4 9.1c4.6.4 8.6-.6 12.2-3M4.2 16.2c5.1-4 10-5.3 16.6-3.9" /></svg>;
+  if (name === "Instagram") return <svg {...common}><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.7" r=".7" fill="currentColor" stroke="none" /></svg>;
+  if (name === "GitHub") return <svg {...common}><path d="M8.4 20.5c-4.3-1.2-5.9-4.4-5.9-8.2 0-2.1.8-3.9 2.2-5.2-.2-.8-.3-2.4.2-3.6 0 0 1.8-.2 3.7 1.7a13 13 0 0 1 6.8 0c1.9-1.9 3.7-1.7 3.7-1.7.5 1.2.4 2.8.2 3.6 1.4 1.3 2.2 3.1 2.2 5.2 0 3.8-1.6 7-5.9 8.2M9 20.5v-3.2c-2 .5-3.3 0-4.2-1.7M15 20.5v-3.2c0-1-.1-1.7-.6-2.2" /></svg>;
+  return <svg {...common}><path d="M20.7 11.7a8.7 8.7 0 0 1-12.9 7.6L3 20.6l1.3-4.7a8.7 8.7 0 1 1 16.4-4.2Z" /><path d="M8.2 7.6c-.5.2-.9.9-.9 1.5 0 2.3 3.4 5.8 5.7 6.5.7.2 1.5-.2 1.9-.8l.5-.9-2.1-1-1 1c-1.2-.5-2.3-1.6-2.9-2.8l.9-1-1.2-2.2-.9-.3Z" /></svg>;
+}
+
+function FlowMark() {
+  return <svg className="flow-mark" viewBox="0 0 220 220" fill="none" aria-hidden="true">
+    <path d="M29 35h66c33 0 52 14 52 40s-19 40-52 40H29" />
+    <path d="M29 115h75c41 0 67 19 67 54v18" />
+    <path d="M147 75h26c17 0 27-9 27-26V35" />
+    <circle cx="29" cy="35" r="8" /><circle cx="29" cy="115" r="8" /><circle cx="171" cy="187" r="8" /><circle cx="200" cy="35" r="8" />
+  </svg>;
+}
+
 const projects = [
   {
     number: "01",
@@ -66,7 +84,7 @@ export default function Home() {
               <a className="pill pill-dark" href="/Ryan-Sutawijaya-CV.pdf" download="CV-Ryan-Sutawijaya.pdf">Unduh CV <span aria-hidden="true">↓</span></a>
               <a className="text-link" href="#karya">Lihat proyek <span aria-hidden="true">↗</span></a>
             </div>
-            <div className="hero-social" aria-label="Media sosial Ryan"><span>TEMUKAN SAYA</span><div>{socialLinks.map(({ label, href }) => <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${label} Ryan, terbuka di tab baru`}>{label}<span aria-hidden="true">↗</span></a>)}</div></div>
+            <nav className="hero-social" aria-label="Media sosial Ryan"><span className="social-kicker">TERHUBUNG DI</span><div className="social-grid">{socialLinks.map(({ label, href }) => <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${label} Ryan, terbuka di tab baru`}><SocialIcon name={label} /><span>{label}</span></a>)}</div></nav>
           </div>
 
           <div className="hero-art" id="hero-art" data-mode="0" aria-label="Potret artistik Ryan Sutawijaya dengan tiga eksplorasi visual yang dapat dipilih">
@@ -93,7 +111,7 @@ export default function Home() {
       <section className="intro section-pad reveal" id="cerita" aria-labelledby="intro-title">
         <div className="section-index"><span>01 / PROFIL</span><span>PENGALAMAN DAN LATAR BELAKANG</span></div>
         <div className="intro-layout">
-          <div className="intro-symbol" aria-hidden="true"><span>R</span><small>RYAN<br />SUTAWIJAYA</small></div>
+          <div className="intro-symbol" aria-hidden="true"><FlowMark /><small>RYAN<br />SUTAWIJAYA</small></div>
           <div>
             <h2 id="intro-title">Dari kebutuhan pengguna ke <em>desain yang siap dibangun.</em></h2>
             <div className="intro-columns">
