@@ -72,3 +72,23 @@
 @media(max-width:760px){.hero h1{font-size:clamp(55px,12vw,84px)}.hero-social{margin-top:35px}.project-card{min-height:435px}.project-card-featured{min-height:485px}.project-card h3{font-size:clamp(38px,7vw,58px)}}
 @media(max-width:600px){.project-grid{grid-template-columns:1fr}.project-card-featured{grid-column:auto}.project-card{padding:24px;min-height:420px}.project-card-featured{min-height:500px}.project-card h3,.project-card:not(.project-card-featured) h3{font-size:clamp(36px,9vw,52px)}.project-card-bottom{align-items:flex-start;flex-direction:column}.intro-facts{grid-template-columns:1fr;gap:26px}}
 @media(max-width:480px){.hero h1{font-size:clamp(47px,11.7vw,60px)}.social-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.social-grid a{grid-column:span 2;min-height:83px;border-bottom:1px solid #ffffff38}.social-grid a:nth-child(3){border-right:0}.social-grid a:nth-child(n+4){grid-column:span 3;border-bottom:0}.social-grid a:last-child{border-right:0}.project-card-top{font-size:9px}.project-description{font-size:14px}.contact-bottom .contact-email{font-size:clamp(21px,7vw,30px)}}
+
+/* Keep the editorial layout readable between phone and desktop widths. */
+@media(min-width:761px) and (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:48px;padding-top:45px}
+  .hero-copy{padding:0}
+  .hero h1{font-size:clamp(64px,8vw,82px)}
+  .hero-art{max-width:640px;justify-self:start}
+  .art-frame{height:min(70vh,650px)}
+  .hero-social{max-width:640px}
+  .intro-layout{grid-template-columns:1fr;padding-top:75px}
+  .intro-symbol{display:none}
+}
+@media(max-width:480px){
+  .contact-bottom .contact-email{font-size:clamp(16px,4.8vw,22px);letter-spacing:-.05em}
+  .contact-bottom .contact-email span{margin-left:7px}
+}
+@media(max-width:360px){
+  .hero h1{font-size:clamp(40px,12.5vw,45px)}
+  .work h2,.process-heading h2,.skills h2{font-size:clamp(48px,15vw,54px)}
+}
