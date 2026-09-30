@@ -3,10 +3,10 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://darkzzhelll.github.io'),
   title: 'Ryan Sutawijaya — UI/UX Designer',
-  description: 'Ryan Sutawijaya adalah UI/UX Designer yang sedang belajar front-end, API, dan vibe coding. Lihat profil, proyek, dan cara menghubunginya.',
+  description: 'Portofolio Ryan Sutawijaya, UI/UX Designer di Risada Damai Sejahtera. Pengalaman, proyek, dan CV dalam satu tempat.',
   openGraph: {
     title: 'Ryan Sutawijaya — UI/UX Designer',
-    description: 'Website profil Ryan Sutawijaya: UI/UX Designer yang sedang belajar membuat web.',
+    description: 'Pengalaman UI/UX, proyek pilihan, dan CV Ryan Sutawijaya.',
     type: 'website',
     images: ['/assets/ryan-portrait.png'],
   },
