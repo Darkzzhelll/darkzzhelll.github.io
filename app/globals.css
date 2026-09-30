@@ -7,3 +7,19 @@
 @media(max-width:760px){.site-header{height:66px}.site-header nav{gap:16px;font-size:11px}.header-contact{display:none}.hero{min-height:auto}.hero-topline span:last-child{display:none}.hero-grid{grid-template-columns:1fr;padding-top:45px;gap:40px}.hero-copy{padding:0}.hero h1{font-size:clamp(57px,13.2vw,92px);margin:23px 0}.hero-copy>p{font-size:15px}.hero-art{max-width:none}.art-frame{height:640px;min-height:0}.hero-bottomline{padding-top:38px}.hero-bottomline span:last-child{display:none}.intro-layout{grid-template-columns:1fr;gap:50px;padding-top:65px}.intro-symbol{display:none}.intro h2{font-size:clamp(44px,8vw,67px);margin-bottom:45px}.intro-columns{grid-template-columns:1fr;gap:17px}.statement{min-height:580px}.process-heading,.work-head{display:block}.process-heading p,.work-head p{margin-top:25px}.skills-note{margin-top:60px}.work-card{min-height:410px}.work-card-center{min-height:320px}.contact h2{margin-bottom:90px}.contact-bottom{align-items:start;flex-direction:column}.contact-bottom a{margin-top:20px}footer span:nth-child(2){display:none}}
 @media(max-width:480px){.site-header nav{gap:12px}.hero h1{font-size:clamp(50px,13.5vw,66px)}.hero-actions{gap:14px}.pill{gap:22px}.art-frame{height:520px}.art-caption{left:17px;bottom:45px;gap:12px}.art-caption strong{font-size:18px}.art-corner-br{display:none}.mode-button span{font-size:10px;margin-left:2px}.hero-bottomline{font-size:9px}.section-index span:last-child{display:none}.intro h2{font-size:44px}.statement{min-height:500px}.statement-text{font-size:48px}.statement-mark{font-size:95px}.process-heading h2,.skills h2,.work h2{font-size:56px}.process-item{grid-template-columns:36px 1fr 20px;gap:11px;padding:27px 0}.process-item h3{font-size:25px}.process-item p{font-size:13px}.work-card{padding:19px}.work-card-center{gap:8px}.work-star{font-size:100px}.work-card-center strong{font-size:34px}.work-card-bottom span:last-child{display:none}.contact h2{font-size:69px}footer{font-size:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}.statement-bg{transform:none!important}}
+
+/* The project card uses Ryan's monogram instead of a generic symbol. */
+.work-monogram{flex:0 0 auto;font-size:clamp(125px,18vw,250px);font-weight:700;letter-spacing:-.17em;line-height:.85;color:transparent;-webkit-text-stroke:2px #e9e4d8;transform:rotate(-7deg);transition:transform .55s ease}
+.work-monogram span{color:var(--accent);-webkit-text-stroke:0;letter-spacing:0}
+.work-card:hover .work-monogram{transform:rotate(0deg) translateY(-5px)}
+.skills-groups{display:flex;flex-direction:column;justify-content:center;gap:28px}
+.skills-groups h3{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 13px}
+.contact-bottom{align-items:flex-start}
+.contact-links{width:min(700px,60%);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 26px}
+.contact-bottom .contact-links a{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;margin:0;padding:13px 0 17px;border-bottom:1px solid #602b20;font-size:clamp(18px,2.2vw,29px);line-height:1.15;transition:color .2s,transform .2s}
+.contact-bottom .contact-links a:hover{color:#fff3e6;transform:translateY(-2px)}
+.contact-bottom .contact-links a span{margin:0}
+.contact-bottom .contact-links a span:last-child{font-size:24px;line-height:1}
+.contact-links small{display:block;font:11px var(--mono);letter-spacing:0;margin-top:9px}
+@media(max-width:760px){.contact-links{width:100%}.work-monogram{font-size:clamp(105px,22vw,160px)}}
+@media(max-width:480px){.hero h1{font-size:clamp(47px,12vw,61px)}.work-card-center{gap:14px}.work-monogram{font-size:95px;-webkit-text-stroke:1.5px #e9e4d8}.work-card-center strong{font-size:33px}.contact-links{grid-template-columns:1fr}.contact h2{font-size:clamp(55px,14vw,69px)}}
