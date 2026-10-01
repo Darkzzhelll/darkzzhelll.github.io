@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { projects } from "./projects";
 
 const socialLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/ryan-sutawijaya-a84758236/" },
@@ -16,44 +17,6 @@ function SocialIcon({ name }) {
   if (name === "GitHub") return <svg {...common}><path d="M8.4 20.5c-4.3-1.2-5.9-4.4-5.9-8.2 0-2.1.8-3.9 2.2-5.2-.2-.8-.3-2.4.2-3.6 0 0 1.8-.2 3.7 1.7a13 13 0 0 1 6.8 0c1.9-1.9 3.7-1.7 3.7-1.7.5 1.2.4 2.8.2 3.6 1.4 1.3 2.2 3.1 2.2 5.2 0 3.8-1.6 7-5.9 8.2M9 20.5v-3.2c-2 .5-3.3 0-4.2-1.7M15 20.5v-3.2c0-1-.1-1.7-.6-2.2" /></svg>;
   return <svg {...common}><path d="M20.7 11.7a8.7 8.7 0 0 1-12.9 7.6L3 20.6l1.3-4.7a8.7 8.7 0 1 1 16.4-4.2Z" /><path d="M8.2 7.6c-.5.2-.9.9-.9 1.5 0 2.3 3.4 5.8 5.7 6.5.7.2 1.5-.2 1.9-.8l.5-.9-2.1-1-1 1c-1.2-.5-2.3-1.6-2.9-2.8l.9-1-1.2-2.2-.9-.3Z" /></svg>;
 }
-
-function FlowMark() {
-  return <svg className="flow-mark" viewBox="0 0 220 220" fill="none" aria-hidden="true">
-    <path d="M29 35h66c33 0 52 14 52 40s-19 40-52 40H29" />
-    <path d="M29 115h75c41 0 67 19 67 54v18" />
-    <path d="M147 75h26c17 0 27-9 27-26V35" />
-    <circle cx="29" cy="35" r="8" /><circle cx="29" cy="115" r="8" /><circle cx="171" cy="187" r="8" /><circle cx="200" cy="35" r="8" />
-  </svg>;
-}
-
-const projects = [
-  {
-    number: "01",
-    category: "PROYEK TIM / 2022",
-    title: "Pemantauan Sungai Brantas",
-    context: "AWS SEAL · MSIB Batch 2 · DLH Kota Batu",
-    description: "Aplikasi web untuk membantu memantau kondisi Sungai Brantas. Saya terlibat sebagai Scrum Master, UI/UX Designer, dan Front-end Developer. Proyek tim ini meraih peringkat pertama di kompetisi AWS SEAL MSIB.",
-    tags: ["UI/UX", "Front-end", "Scrum Master"],
-    featured: true,
-  },
-  {
-    number: "02",
-    category: "PEKERJAAN / 2023—SEKARANG",
-    title: "Antarmuka web & aplikasi",
-    context: "Risada Damai Sejahtera",
-    description: "Merancang antarmuka dan prototipe, menyiapkan layout responsif, serta meninjau implementasi bersama developer. Saya menyempurnakan desain lewat masukan stakeholder dan uji kegunaan.",
-    tags: ["UI/UX", "Prototyping", "Design Handoff"],
-  },
-  {
-    number: "03",
-    category: "PROYEK PRIBADI / 2026",
-    title: "Website profil ini",
-    context: "CV dan portofolio online",
-    description: "Eksperimen membangun website profil dengan Next.js dan Tailwind CSS. Kode serta proses perubahannya terbuka di GitHub.",
-    tags: ["Next.js", "Tailwind CSS", "GitHub Pages"],
-    href: "https://github.com/Darkzzhelll/darkzzhelll.github.io",
-  },
-];
 
 export default function Home() {
   return (
@@ -74,12 +37,12 @@ export default function Home() {
 
     <main id="main" className="relative">
       <section className="hero" id="beranda" aria-labelledby="hero-title">
-        <div className="hero-topline"><span>RYAN SUTAWIJAYA / PORTOFOLIO</span><span>UI/UX DESIGNER · MALANG, INDONESIA</span></div>
+        <div className="hero-topline"><span>RYAN SUTAWIJAYA / PORTOFOLIO</span><span>DESAIN · PRODUK · WEB</span></div>
         <div className="hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow"><span className="live-dot"></span> UI/UX DESIGNER · RYAN SUTAWIJAYA</span>
-            <h1 id="hero-title">Merancang<br /><em>alur</em> dan<br />antarmuka<br />produk digital<span className="period">.</span></h1>
-            <p>Saya merancang antarmuka web dan aplikasi di Risada Damai Sejahtera. Dari prototipe hingga handoff ke developer, saya memastikan alurnya tetap jelas saat desain diterapkan.</p>
+            <span className="eyebrow"><span className="live-dot"></span> RYAN SUTAWIJAYA · DESAIN &amp; VIBE CODING</span>
+            <h1 id="hero-title">Membuat web<br />yang <em>mudah</em><br />dan nyaman<br />digunakan<span className="period">.</span></h1>
+            <p>Saya suka menyederhanakan hal yang rumit menjadi pengalaman yang enak dipakai. Pekerjaan saya bergerak antara desain, koordinasi produk, konten, dan front-end. Sekarang pekerjaan saya banyak berkisar pada vibe coding, sambil terus belajar membangun web yang benar-benar berguna.</p>
             <div className="hero-actions">
               <a className="pill pill-dark" href="/Ryan-Sutawijaya-CV.pdf" download="CV-Ryan-Sutawijaya.pdf">Unduh CV <span aria-hidden="true">↓</span></a>
               <a className="text-link" href="#karya">Lihat proyek <span aria-hidden="true">↗</span></a>
@@ -111,12 +74,12 @@ export default function Home() {
       <section className="intro section-pad reveal" id="cerita" aria-labelledby="intro-title">
         <div className="section-index"><span>01 / PROFIL</span><span>PENGALAMAN DAN LATAR BELAKANG</span></div>
         <div className="intro-layout">
-          <div className="intro-symbol" aria-hidden="true"><FlowMark /><small>RYAN<br />SUTAWIJAYA</small></div>
+          <div className="intro-signature" aria-hidden="true"><span>CATATAN / 01</span><strong><em>Ryan</em><br />Sutawijaya<span className="signature-dot">.</span></strong><small>DESAIN, PRODUK &amp; WEB</small></div>
           <div>
-            <h2 id="intro-title">Dari kebutuhan pengguna ke <em>desain yang siap dibangun.</em></h2>
+            <h2 id="intro-title">Mulai dari apa yang dibutuhkan pengguna menuju <em>solusi yang siap digunakan.</em></h2>
             <div className="intro-columns">
-              <p>Sejak April 2023, saya bekerja sebagai UI/UX Designer di Risada Damai Sejahtera. Saya merancang antarmuka web dan aplikasi, membuat prototipe high-fidelity, serta menyusun layout responsif berdasarkan kebutuhan pengguna dan stakeholder.</p>
-              <p>Saya bekerja bersama developer untuk meninjau hasil implementasi, lalu memperbaiki desain dari masukan dan pengujian usability. Di luar pekerjaan, saya mendalami front-end, integrasi API, dan cara memakai AI untuk menguji ide lebih cepat.</p>
+              <p>Jabatan saya UI/UX Designer, tetapi pekerjaan sehari-hari sering melebar: menyusun alur produk, mengoordinasikan tim, membuat konten dan grafis, sampai membantu sisi front-end. Saya menyesuaikan peran dengan kebutuhan proyek.</p>
+              <p>Belakangan pekerjaan saya lebih sering berupa membangun prototipe web lewat vibe coding. Saya masih belajar front-end dan integrasi API, sambil terus melatih penilaian desain: apa yang perlu dibuat, apa yang sebaiknya disederhanakan, dan apakah hasilnya nyaman dipakai.</p>
             </div>
             <div className="intro-facts"><div><span>PEKERJAAN</span><strong>Risada Damai Sejahtera</strong><small>UI/UX Designer · 2023—sekarang</small></div><div><span>PENDIDIKAN</span><strong>Universitas Brawijaya</strong><small>S1 Informatika · 2018—2023</small></div></div>
           </div>
@@ -126,34 +89,35 @@ export default function Home() {
       <section className="statement" aria-label="Prinsip desain">
         <div className="statement-bg" aria-hidden="true"></div>
         <p className="statement-kicker">PRINSIP KERJA</p>
-        <p className="statement-text">Pengguna perlu tahu<br />apa yang terjadi,<br /><em>dan apa langkah berikutnya.</em></p>
+        <p className="statement-text">Mudah dipakai.<br /><em>Nyaman untuk kembali.</em></p>
+        <p className="statement-note">Saya memilih tampilan yang sederhana dan alur yang tidak membuat orang menebak-nebak. Pengguna seharusnya bisa menyelesaikan tujuannya, lalu betah saat kembali.</p>
       </section>
 
       <section className="process section-pad" id="cara-kerja" aria-labelledby="process-title">
-        <div className="section-index reveal"><span>02 / CARA KERJA</span><span>DARI KEBUTUHAN KE PROTOTIPE</span></div>
-        <div className="process-heading reveal"><h2 id="process-title">Mulai dari <em>masalahnya.</em></h2><p>Pendekatan yang saya gunakan saat merancang dan meninjau antarmuka.</p></div>
+        <div className="section-index reveal"><span>02 / CARA KERJA</span><span>DARI KEBUTUHAN KE HASIL YANG BISA DICOBA</span></div>
+        <div className="process-heading reveal"><h2 id="process-title">Mulai dari <em>orangnya.</em></h2><p>Cara saya bergerak dari kebutuhan pengguna sampai hasil yang bisa dicoba dan diperbaiki.</p></div>
         <div className="process-list">
           <article className="process-item reveal"><span className="process-num">01</span><div><h3>Pahami kebutuhan.</h3><p>Mulai dari tujuan pengguna, kebutuhan stakeholder, dan batasan produk.</p></div><span className="process-icon" aria-hidden="true">↗</span></article>
           <article className="process-item reveal"><span className="process-num">02</span><div><h3>Susun alur.</h3><p>Petakan langkah dan informasi yang perlu dilihat pengguna sebelum merancang tampilan akhir.</p></div><span className="process-icon" aria-hidden="true">↗</span></article>
-          <article className="process-item reveal"><span className="process-num">03</span><div><h3>Buat prototipe.</h3><p>Rancang layar responsif dan prototipe yang bisa ditinjau bersama tim.</p></div><span className="process-icon" aria-hidden="true">↗</span></article>
-          <article className="process-item reveal"><span className="process-num">04</span><div><h3>Tinjau hasilnya.</h3><p>Periksa implementasi bersama developer dan perbaiki berdasarkan masukan pengguna maupun stakeholder.</p></div><span className="process-icon" aria-hidden="true">↗</span></article>
+          <article className="process-item reveal"><span className="process-num">03</span><div><h3>Buat versi awal.</h3><p>Kadang berupa desain dan prototipe, kadang langsung berupa web yang saya bangun dengan bantuan AI.</p></div><span className="process-icon" aria-hidden="true">↗</span></article>
+          <article className="process-item reveal"><span className="process-num">04</span><div><h3>Coba dan perbaiki.</h3><p>Periksa apakah alurnya mudah dipahami, minta masukan, lalu rapikan bagian yang menghambat pengguna.</p></div><span className="process-icon" aria-hidden="true">↗</span></article>
         </div>
       </section>
 
       <section className="skills section-pad" aria-labelledby="skills-title">
         <div className="section-index reveal"><span>03 / KEAHLIAN</span><span>ALAT DAN BIDANG YANG SAYA KERJAKAN</span></div>
-        <div className="skills-layout reveal"><h2 id="skills-title">Desain sebagai dasar.<br /><em>Kode sebagai perluasan.</em></h2><div className="skills-groups"><div><h3>Di pekerjaan</h3><div className="skill-tags" aria-label="Bidang kerja"><span>UI/UX Design</span><span>Figma</span><span>Prototyping</span><span>Responsive UI</span><span>Design Handoff</span><span>Photoshop</span><span>Illustrator</span></div></div><div><h3>Sedang didalami</h3><div className="skill-tags" aria-label="Bidang yang sedang dipelajari"><span>Front-end</span><span>Integrasi API</span><span>Vibe Coding</span><span>Claude</span><span>ChatGPT</span><span>z.ai</span></div></div></div></div>
+        <div className="skills-layout reveal"><h2 id="skills-title">Banyak peran.<br /><em>Satu tujuan: mudah dipakai.</em></h2><div className="skills-groups"><div><h3>Yang pernah saya kerjakan</h3><div className="skill-tags" aria-label="Bidang kerja"><span>UI/UX Design</span><span>Koordinasi produk</span><span>Scrum Master</span><span>Konten &amp; grafis</span><span>Prototyping</span><span>Responsive UI</span></div></div><div><h3>Yang sedang saya dalami</h3><div className="skill-tags" aria-label="Bidang yang sedang dipelajari"><span>Vibe coding</span><span>Front-end</span><span>Integrasi API</span><span>Claude</span><span>ChatGPT</span><span>z.ai</span></div></div></div></div>
         <p className="skills-note reveal">Pengalaman kerja dan pendidikan lengkap tersedia di CV yang dapat diunduh.</p>
       </section>
 
       <section className="work section-pad" id="karya" aria-labelledby="work-title">
         <div className="section-index reveal"><span>04 / PROYEK</span><span>TIGA CONTOH DARI PEKERJAAN DAN PROYEK PRIBADI</span></div>
-        <div className="work-head reveal"><h2 id="work-title">Beberapa proyek <em>yang saya kerjakan.</em></h2><p>Tiga contoh pekerjaan saya: proyek tim, desain produk di tempat kerja, dan website ini.</p></div>
+        <div className="work-head reveal"><h2 id="work-title">Beberapa pekerjaan, <em>beberapa peran.</em></h2><p>Buka setiap cerita untuk melihat konteks, peran saya, dan cara pengerjaannya.</p></div>
         <div className="project-grid">
           {projects.map((project) => <article className={`project-card reveal${project.featured ? " project-card-featured" : ""}`} key={project.number}>
-            <div className="project-card-top"><span>{project.number} / {project.category}</span><span aria-hidden="true">{project.href ? "↗" : "—"}</span></div>
+            <div className="project-card-top"><span>{project.number} / {project.kind.toUpperCase()} · {project.year.toUpperCase()}</span><span aria-hidden="true">↗</span></div>
             <div className="project-card-body"><span className="project-card-watermark" aria-hidden="true">{project.number}</span><p className="project-context">{project.context}</p><h3>{project.title}</h3><p className="project-description">{project.description}</p></div>
-            <div className="project-card-bottom"><div className="project-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>{project.href && <a href={project.href} target="_blank" rel="noopener noreferrer">Lihat kode <span aria-hidden="true">↗</span></a>}</div>
+            <div className="project-card-bottom"><div className="project-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><a href={`/proyek/${project.slug}/`} aria-label={`Baca cerita proyek ${project.title}`}>Baca ceritanya <span aria-hidden="true">↗</span></a></div>
           </article>)}
         </div>
       </section>

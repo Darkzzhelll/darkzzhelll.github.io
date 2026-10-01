@@ -1,0 +1,83 @@
+export const projects = [
+  {
+    slug: "sungai-brantas",
+    number: "01",
+    kind: "Proyek tim",
+    year: "2022",
+    title: "Pemantauan Sungai Brantas",
+    context: "AWS SEAL · MSIB Batch 2 · DLH Kota Batu",
+    description: "Aplikasi web untuk pemantauan Sungai Brantas. Dalam tim ini saya mengambil peran Scrum Master, UI/UX Designer, dan Front-end Developer.",
+    roles: ["Scrum Master", "UI/UX Designer", "Front-end Developer"],
+    tags: ["Koordinasi tim", "Desain antarmuka", "Front-end"],
+    featured: true,
+    illustration: "river",
+    illustrationCaption: "Ilustrasi konsep alur pemantauan sungai; bukan tampilan aplikasi asli.",
+    lead: "Di proyek ini saya merangkap Scrum Master, UI/UX Designer, dan Front-end Developer. Saya ikut bekerja dari koordinasi tim sampai tampilan webnya.",
+    background: [
+      "Dalam program AWS SEAL MSIB Batch 2, tim kami mengerjakan aplikasi web untuk membantu DLH Kota Batu memantau kondisi Sungai Brantas.",
+      "Pekerjaannya mencakup koordinasi tim, desain antarmuka, dan implementasi front-end. Ketiga bagian itu perlu saling sesuai agar aplikasi dapat digunakan seperti yang direncanakan.",
+    ],
+    approach: [
+      { label: "01 / Tim", title: "Menjaga koordinasi", body: "Sebagai Scrum Master, saya mengambil bagian dalam koordinasi kerja tim selama proyek berlangsung." },
+      { label: "02 / Desain", title: "Merancang antarmuka", body: "Sebagai UI/UX Designer, saya ikut memikirkan bagaimana kebutuhan pemantauan diterjemahkan menjadi alur dan tampilan web." },
+      { label: "03 / Bangun", title: "Mengerjakan front-end", body: "Saya juga terlibat dalam pengerjaan sisi front-end, sehingga keputusan desain dapat dilihat dalam bentuk yang bisa dicoba." },
+    ],
+    outcome: "Proyek tim ini meraih peringkat pertama dalam kompetisi AWS SEAL MSIB Batch 2. Itu adalah hasil tim; peran saya mencakup koordinasi, desain, dan front-end.",
+    closing: "Di sinilah saya mulai terbiasa berpindah peran: membahas kebutuhan, menjaga pekerjaan tim, lalu ikut mengerjakan bagian yang dilihat pengguna.",
+  },
+  {
+    slug: "pekerjaan-risada",
+    number: "02",
+    kind: "Rangkuman pekerjaan",
+    year: "2023—sekarang",
+    title: "Beragam peran di Risada",
+    context: "Risada Damai Sejahtera",
+    description: "Rangkuman pekerjaan yang bergerak dari desain dan koordinasi produk sampai konten, front-end, dan prototipe lewat vibe coding.",
+    roles: ["UI/UX Designer", "Koordinasi produk", "Konten & grafis", "Vibe coding"],
+    tags: ["Desain", "Koordinasi", "Vibe coding"],
+    illustration: "workflow",
+    illustrationCaption: "Ilustrasi konsep alur kerja; bukan layar produk atau dokumen internal Risada.",
+    lead: "Jabatan saya UI/UX Designer, tetapi pekerjaan dapat berpindah dari desain dan koordinasi hingga membuat prototipe langsung. Halaman ini merangkum bagian-bagian itu.",
+    background: [
+      "Sejak April 2023 saya bekerja di Risada Damai Sejahtera dengan jabatan UI/UX Designer. Dalam praktiknya, kebutuhan proyek sering membawa saya ke koordinasi pekerjaan, konten, desain grafis, front-end, dan kini vibe coding.",
+      "Ini adalah rangkuman jenis pekerjaan yang saya lakukan, bukan studi kasus satu produk klien. Materi produk internal tidak saya tampilkan di halaman ini.",
+    ],
+    approach: [
+      { label: "01 / Rancang", title: "Membuat versi yang bisa ditinjau", body: "Saya menyiapkan desain antarmuka, prototipe, dan layout responsif agar gagasan bisa dibahas bersama tim." },
+      { label: "02 / Koordinasi", title: "Menyambungkan pekerjaan", body: "Sesuai kebutuhan, saya ikut mengatur pekerjaan tim, menyiapkan konten atau grafis, dan bekerja bersama developer saat desain diterapkan." },
+      { label: "03 / Coba lagi", title: "Membangun dan meninjau", body: "Sekarang saya lebih sering mencoba prototipe lewat vibe coding. Saya menilai kembali alur dan tampilannya dari masukan stakeholder serta uji kegunaan." },
+    ],
+    outcome: "Yang dapat saya ceritakan saat ini adalah cara saya berpindah antara desain, koordinasi, konten, dan pembuatan prototipe. Saya belum menampilkan layar produk internal di sini.",
+    closing: "Saat ada contoh pekerjaan yang dapat dipublikasikan, halaman ini bisa dilengkapi dengan tampilan dan hasilnya.",
+  },
+  {
+    slug: "website-profil",
+    number: "03",
+    kind: "Proyek pribadi",
+    year: "2026",
+    title: "Website profil ini",
+    context: "CV dan portofolio online",
+    description: "Ruang untuk menceritakan pekerjaan, memperlihatkan proses, dan bereksperimen membangun web lewat vibe coding.",
+    roles: ["Arah konten", "Peninjauan desain", "Vibe coding"],
+    tags: ["Next.js", "Tailwind CSS", "GitHub Pages"],
+    illustration: "portfolio",
+    illustrationCaption: "Ilustrasi struktur website profil ini, disederhanakan dari halaman yang sedang Anda lihat.",
+    lead: "Website ini berawal dari kebutuhan sederhana: CV yang bisa dibuka lewat tautan, lalu berkembang menjadi tempat untuk menjelaskan pekerjaan dengan lebih utuh.",
+    background: [
+      "Saya ingin satu alamat yang memuat profil, CV, dan proyek. Bukan hanya daftar kemampuan, tetapi juga cerita tentang peran saya dan cara saya bekerja.",
+      "Saya menentukan arah, meninjau hasil, dan memberi umpan balik selama website ini dibuat dengan bantuan AI. Cara kerja seperti ini adalah bagian dari eksplorasi vibe coding saya.",
+    ],
+    approach: [
+      { label: "01 / Isi", title: "Memilih yang perlu diceritakan", body: "Konten diubah dari pengenalan jabatan yang sempit menjadi cerita tentang desain, koordinasi, konten, front-end, dan pekerjaan saya saat ini." },
+      { label: "02 / Rasa", title: "Mencoba interaksi seperlunya", body: "Hero memakai foto dan interaksi penunjuk. Di luar itu, saya memilih tata letak editorial yang tetap mudah dibaca di ponsel." },
+      { label: "03 / Revisi", title: "Meninjau sambil berjalan", body: "Copy, identitas visual, proyek, dan tampilan mobile diperbaiki lewat beberapa putaran tinjauan. Website ini akan terus berubah seiring pekerjaan baru." },
+    ],
+    outcome: "Website ini sudah tersedia melalui GitHub Pages, dibuat dengan Next.js dan Tailwind CSS, serta menyediakan CV yang dapat diunduh dan halaman cerita proyek.",
+    closing: "Bagi saya, proyek ini bukan akhir portofolio. Ini tempat untuk mencatat eksperimen dan menunjukkan apa yang benar-benar sudah saya kerjakan.",
+    external: { label: "Lihat kode di GitHub", href: "https://github.com/Darkzzhelll/darkzzhelll.github.io" },
+  },
+];
+
+export function getProject(slug) {
+  return projects.find((project) => project.slug === slug);
+}
