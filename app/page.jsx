@@ -1,4 +1,6 @@
 import Script from "next/script";
+import InkGallery from "./components/InkGallery";
+import { homeGallery } from "./gallery-data";
 import { projects } from "./projects";
 
 const socialLinks = [
@@ -31,6 +33,7 @@ export default function Home() {
         <a href="#cerita">Profil</a>
         <a href="#cara-kerja">Cara kerja</a>
         <a href="#karya">Karya</a>
+        <a href="#galeri">Galeri</a>
       </nav>
       <a className="header-contact" href="#kontak">Mari terhubung <span aria-hidden="true">↗</span></a>
     </header>
@@ -68,7 +71,7 @@ export default function Home() {
             <p className="art-hint">Arahkan kursor ke foto, atau pilih satu sisi.</p>
           </div>
         </div>
-        <div className="hero-bottomline"><span>TERAKHIR DIPERBARUI 2026</span><a href="#cerita">LANJUT BACA <span aria-hidden="true">↓</span></a><span>01 — 04</span></div>
+        <div className="hero-bottomline"><span>TERAKHIR DIPERBARUI 2026</span><a href="#cerita">LANJUT BACA <span aria-hidden="true">↓</span></a><span>01 — 05</span></div>
       </section>
 
       <section className="intro section-pad reveal" id="cerita" aria-labelledby="intro-title">
@@ -120,6 +123,12 @@ export default function Home() {
             <div className="project-card-bottom"><div className="project-tags">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div><a href={`/proyek/${project.slug}/`} aria-label={`Baca cerita proyek ${project.title}`}>Baca ceritanya <span aria-hidden="true">↗</span></a></div>
           </article>)}
         </div>
+      </section>
+
+      <section className="gallery-section section-pad" id="galeri" aria-labelledby="gallery-title">
+        <div className="section-index reveal"><span>05 / GALERI</span><span>CUPLIKAN VISUAL DARI CERITA PROYEK</span></div>
+        <div className="gallery-heading reveal"><h2 id="gallery-title">Ruang <em>visual.</em></h2><div><p>Beberapa pekerjaan punya hasil yang bisa ditunjukkan. Sebagian lain saya ceritakan lewat peran dan prosesnya.</p><small>Klik gambar untuk melihat keterangan dan cerita proyek.</small></div></div>
+        <InkGallery items={homeGallery} scattered label="Galeri visual pilihan dari proyek Ryan" />
       </section>
 
       <section className="contact section-pad" id="kontak" aria-labelledby="contact-title">

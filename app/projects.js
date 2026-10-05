@@ -12,6 +12,7 @@ export const projects = [
     featured: true,
     illustration: "river",
     illustrationCaption: "Ilustrasi konsep alur pemantauan sungai; bukan tampilan aplikasi asli.",
+    galleryIntro: "Ilustrasi ini membantu menjelaskan konteks pemantauan dan peran saya. Tampilan aplikasi aslinya belum saya tampilkan.",
     lead: "Di proyek ini saya merangkap Scrum Master, UI/UX Designer, dan Front-end Developer. Saya ikut bekerja dari koordinasi tim sampai tampilan webnya.",
     background: [
       "Dalam program AWS SEAL MSIB Batch 2, tim kami mengerjakan aplikasi web untuk membantu DLH Kota Batu memantau kondisi Sungai Brantas.",
@@ -37,6 +38,7 @@ export const projects = [
     tags: ["Desain", "Koordinasi", "Vibe coding"],
     illustration: "workflow",
     illustrationCaption: "Ilustrasi konsep alur kerja; bukan layar produk atau dokumen internal Risada.",
+    galleryIntro: "Saya belum menampilkan materi produk internal. Galeri ini merangkum jenis pekerjaan yang saya lakukan melalui ilustrasi konsep.",
     lead: "Jabatan saya UI/UX Designer, tetapi pekerjaan dapat berpindah dari desain dan koordinasi hingga membuat prototipe langsung. Halaman ini merangkum bagian-bagian itu.",
     background: [
       "Sejak April 2023 saya bekerja di Risada Damai Sejahtera dengan jabatan UI/UX Designer. Dalam praktiknya, kebutuhan proyek sering membawa saya ke koordinasi pekerjaan, konten, desain grafis, front-end, dan kini vibe coding.",
@@ -62,6 +64,7 @@ export const projects = [
     tags: ["Next.js", "Tailwind CSS", "GitHub Pages"],
     illustration: "portfolio",
     illustrationCaption: "Ilustrasi struktur website profil ini, disederhanakan dari halaman yang sedang Anda lihat.",
+    galleryIntro: "Potret yang dipakai di beranda dan ilustrasi konsep tentang struktur serta proses pembuatan website ini.",
     lead: "Website ini berawal dari kebutuhan sederhana: CV yang bisa dibuka lewat tautan, lalu berkembang menjadi tempat untuk menjelaskan pekerjaan dengan lebih utuh.",
     background: [
       "Saya ingin satu alamat yang memuat profil, CV, dan proyek. Bukan hanya daftar kemampuan, tetapi juga cerita tentang peran saya dan cara saya bekerja.",
